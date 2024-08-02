@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* common styles start */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.primary_text a {
+  color: #3c354f;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.secondary_text {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.primary_btn {
+  all: unset;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 21px 40px;
+  border-radius: 48px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
+}
+
+/* header section styles start */
+
+/* nav styles */
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 0;
+}
+
+.nav_container .logo {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.social {
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 16px 28px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.social .follow_us {
+  text-decoration: none;
+  color: #3c354f;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.social a {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.logo_name {
+  font-size: 45px;
+  font-weight: 700;
+  color: #0b0223;
+}
+
+.logo_g_latter {
+  background: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social_link ul {
+  display: flex;
+  align-items: center;
+}
+
+.social_link ul li {
+  list-style-type: none;
+}
+
+.social_link ul li a {
+  text-decoration: none;
+}
+
+/* banner section styles start */
+.banner_section {
+  background-image: url(/images/Group\ 14.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner_title {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.banner_big_text {
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner_contents ul li {
+  list-style: none;
+}
+.banner_contents ul li i {
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.banner_btn {
+  margin-top: 40px;
+}
+.btn_modified {
+  background: #4ec5f7;
+  margin-left: 40px;
+}
