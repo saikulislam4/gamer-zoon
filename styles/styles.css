@@ -34,7 +34,12 @@
   cursor: pointer;
   background: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
 }
-
+.primary_description {
+  color: #534c64;
+  text-align: right;
+  font-size: 18px;
+  line-height: 30px;
+}
 /* header section styles start */
 
 /* nav styles */
@@ -146,4 +151,124 @@
 .btn_modified {
   background: #4ec5f7;
   margin-left: 40px;
+}
+
+/* we are gamer section style start */
+
+.we_gamer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 13.13%,
+    rgba(255, 66, 165, 0.03) 87.94%
+  );
+}
+.gamer_container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.gamer_contents {
+  text-align: right;
+}
+.gamer_title {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.gamer_btn {
+  margin: 20px 0;
+}
+.purpose h6 {
+  color: #534c64;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 45px;
+}
+.purpose h2 {
+  color: #534c64;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* online gamer and funny video section styles start */
+.online_gamer_container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.online_gaming {
+  padding: 120px 0;
+}
+.online_title_contents {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.online_title_contents p {
+  text-align: center;
+}
+.online_title_update {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.online_item_img {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: 0.5s linear;
+}
+.online_item_img .online_icon {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  transition: 0.5s linear;
+}
+.online_item_img .online_icon i{
+  font-size: 50px;
+  color: white;
+}
+.online_item_img .online_watch {
+  color: #ff42a5;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.online_item_inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #00000098;
+  z-index: 1;
+  border-radius: 16px;
+  opacity: 0;
+  transition: 0.5s linear;
+}
+/* hover section  */
+.online_item_img:hover .online_item_inner{
+  display: block;
+  opacity: 80%;
+}
+.online_item_img:hover .online_icon{
+  opacity: 100%;
+}
+.online_item_text {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
 }
