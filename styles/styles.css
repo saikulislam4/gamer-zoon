@@ -193,7 +193,7 @@
 }
 
 /* online gamer and funny video section styles start */
-.online_gamer_container{
+.online_gamer_container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -223,7 +223,7 @@
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 20px;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 .online_item_img .online_icon {
   position: absolute;
@@ -233,9 +233,9 @@
   transform: translate(-50%, -50%);
   opacity: 0;
   z-index: 2;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
-.online_item_img .online_icon i{
+.online_item_img .online_icon i {
   font-size: 50px;
   color: white;
 }
@@ -256,14 +256,14 @@
   z-index: 1;
   border-radius: 16px;
   opacity: 0;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 /* hover section  */
-.online_item_img:hover .online_item_inner{
+.online_item_img:hover .online_item_inner {
   display: block;
   opacity: 80%;
 }
-.online_item_img:hover .online_icon{
+.online_item_img:hover .online_icon {
   opacity: 100%;
 }
 .online_item_text {
@@ -271,4 +271,84 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
+}
+
+/* instantly section styles start */
+.instantly_play {
+  display: flex;
+  align-items: center;
+  margin-bottom: 200px;
+}
+.instantly_contents {
+  text-align: right;
+  padding: 0 200px;
+}
+.instantly_contents h1 {
+  margin-bottom: 20px;
+}
+.text_gradient {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.instantly_image {
+  position: relative;
+}
+.instantly_small_img {
+  position: absolute;
+  left: -18%;
+  bottom: -12%;
+}
+
+/* play games online section styles start */
+.play_games_online {
+  flex-direction: row-reverse;
+}
+.play_games_contents,
+.play_games_contents p {
+  text-align: left;
+}
+.play_games_small_img {
+  left: 82%;
+}
+
+/* careers section style start */
+.careers_container {
+  background: #f948b2;
+}
+
+.careers_inner {
+  display: flex;
+  align-items: center;
+  padding: 120px 0;
+  gap: 20px;
+}
+.careers_image img{
+  width: 100%;
+}
+.careers_contents, .careers_image{width: 50%;}
+
+.careers_contents h1,
+p {
+  color: white !important;
+  text-align: left !important;
+  margin-bottom: 20px;
+}
+.careers_single_item_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+.careers_single_item_container ul li {
+  list-style: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.careers_btn_modified{
+  color: #f948b2;
+  background: white;
 }
