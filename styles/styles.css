@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 /* common styles start */
@@ -324,10 +325,13 @@
   padding: 120px 0;
   gap: 20px;
 }
-.careers_image img{
+.careers_image img {
   width: 100%;
 }
-.careers_contents, .careers_image{width: 50%;}
+.careers_contents,
+.careers_image {
+  width: 50%;
+}
 
 .careers_contents h1,
 p {
@@ -348,7 +352,100 @@ p {
   font-weight: 600;
   line-height: 40px;
 }
-.careers_btn_modified{
+.careers_btn_modified {
   color: #f948b2;
   background: white;
+}
+
+/* small icon section styles start */
+.small_icon_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 120px 0;
+  justify-content: center;
+  gap: 20px;
+}
+.small_icon_item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #f948b200;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.small_icon_item .circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 16px;
+}
+.small_icon_item .icon_name {
+  color: #0b0223;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+}
+.small_icon_item:hover {
+  border: 1px solid #f948b2;
+}
+
+/* footer section styles start */
+footer {
+  background: #000;
+  padding: 120px 0;
+}
+.footer_container {
+  text-align: center;
+  color: white;
+}
+.footer_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_logo > .logo_name {
+  color: white;
+  margin-left: 20px;
+}
+
+.link_container,
+.policy_container,
+.icon_container {
+  margin: 60px 0;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+.footer_container li,
+a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.icon_container li a{
+  font-size: 40px;
+}
+.policy_container > li a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer_copy{
+  display: flex;
+  justify-content: center;
+}
+.footer_copy .copyright{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 200;
+  text-align: center;
 }
